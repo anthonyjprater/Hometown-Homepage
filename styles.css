@@ -1,0 +1,164 @@
+/**
+Palette: https://scrimba.com/links/hometown-palette
+RED: #E63946
+LIGHT: #F1FAEE
+AQUA: #A8DADC
+LIGHT BLUE: #457B9D
+DARK BLUE: #1D3557
+
+*/
+
+body {
+    margin: 0;
+    text-align: center;
+    font-family: 'Crete Round', serif;
+    display: flex;
+    flex-flow: column nowrap;
+    background: #271F33
+}
+
+h1,
+h2 {
+    color: #fcfcfc;
+    text-shadow: 1px 1px 1px #000;
+}
+
+h1 {
+    background-color: rebeccapurple;
+    font-size: 2rem;
+    padding: 0.5rem;
+    line-height: 37px;
+    border-radius: 10px;
+}
+
+h1,
+p {
+    word-spacing: 1px;
+}
+
+h2 {
+    font-size: 1.175rem;
+    background-color: #ED9989;
+    max-width: 25rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 10px;
+}
+h3 {
+    font-size: 1.5rem;
+    /* border: 1px solid red; */
+    line-height: 28px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+img {
+    width: 100px;
+}
+
+section.header {
+    background-image: url("./images/lccityscape.jpg");
+    background-position: center;
+    background-size: cover;
+    min-height: 35vh;
+    display: flex;
+    gap: 3rem;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+section.activities {
+    background-color: #AEB800;
+    padding: 1rem;
+    display: flex;
+    flex-flow: column nowrap;
+    text-shadow: 1px 1px 10px #ffffff5f;
+}
+
+div.activities-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+article {
+    padding: 0.5rem;
+}
+
+article > img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+section.guide {
+    background-color: #271F33;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 10rem;
+}
+
+div.guide-container {
+    min-width: 200px;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row-reverse;
+    background-color: #3F7A00;
+    padding: 1.5rem 0.75rem;
+    border-radius: 10px;
+    color: #fafafa;
+    text-shadow: 1px 1px 1px #000;
+}
+
+div.guide-container > img {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+    flex-basis: 100%;
+}
+
+div.guide-intro {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+}
+
+
+@media (max-width: 768px) {
+    
+    div.activities-container {
+       flex-flow: column nowrap;
+       align-items: center;
+    }
+    
+    div.guide-container {
+        flex-flow: column nowrap;
+    }
+    div.guide-intro {
+        order: 2;
+    }
+    
+    div.guide-container > img {
+        width: 100%;
+        order: 1;
+    }
+}
+
