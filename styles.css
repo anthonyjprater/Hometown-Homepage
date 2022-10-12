@@ -43,6 +43,11 @@ h2 {
     padding: 0.25rem 0.5rem;
     border-radius: 10px;
 }
+
+h2 p {
+    margin: 0 0 4px;
+}
+
 h3 {
     font-size: 1.5rem;
     line-height: 28px;
@@ -51,7 +56,8 @@ h3 {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h2 p {
     font-family: 'Inter', sans-serif;
     font-weight: 700;
 }
